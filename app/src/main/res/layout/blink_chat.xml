@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <ListView
+      android:id="@+id/msgview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="48dip"
+      android:divider="@drawable/chat_divider"
+      android:listSelector="@android:color/transparent"
+      android:paddingLeft="@dimen/activity_horizontal_margin"
+      android:paddingRight="@dimen/activity_horizontal_margin"
+      android:scrollbarStyle="outsideOverlay"
+      android:transcriptMode="normal"/>
+
+  <LinearLayout
+      android:id="@+id/footer_section"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:background="#eeeeee"
+      android:orientation="horizontal"
+      >
+
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fadeScrollbars="false"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black"
+        />
+
+    <ImageView
+        android:id="@+id/send"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_send_black_48dp"
+        />
+  </LinearLayout>
+
+</RelativeLayout>
