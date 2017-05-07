@@ -1,0 +1,32 @@
+Blink - Apparel Discovery Application
+// app structure, app development and any other thoughts you would like to share with us.
+
+App Structure:
+1) This application is divided into 7 packages, which consists of activities, adapters, fragments and others.
+2) You can find the main activity from sekhar.mitra.dora.blink.activities.MainActivity.java
+
+App Development:
+1) Took Two Days to complete this project.
+2) Worked on simple MVC Architecture.
+3) Spent more time on views and its experience.
+4) The chat information are stored only for the instance of the application, the chat history is not persisted. Due to time constraints.
+
+App Features:
+1) This App used flickr photo search api with hardcoded tag as apparel.( OPEN API Without Authentication)
+2) User is restricted to purchase only t-shirt or a top or a pant or a dress.
+3) Works very much like WhatsApp. Also fetches information when user types in.
+3) You can find the carousel interface which shows minimum of 10 pictures.
+4) Users can swipe through these 10 photos.
+5) User will be able to add a photo to his/her favourite list. (WORKS OFFLINE, STORED LOCALLY).
+6) On typing “more”, the application is able to fetch 10 “new” photos and show to the user.
+7) View positions of pictures are not lost and should be able to see when the user scrolls up.
+8) App is integrated with crashlytics.
+9) Custom libraries used for better experience.
+10) Using Retrofit Rest Client.
+11) Was not able to integrate commenting,add tags because found tuf to integrate flickr api's.
+
+Thoughts:
+1) Very Intresting application to work with, but flickr api's were tough to understand and code. Not properly documented as per my observation.
+2) Using MVP architecture can be very helpful for this kind of application.
+3) Using Reactive-Java(Observer Pattern) could have made much impact to the application.
+4) Need to spend some time on caching and saving inside disk, using some good techniques can bring some changes for the application.
